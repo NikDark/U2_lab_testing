@@ -10,7 +10,7 @@ from apps.core.fast.utils import get_fast_response
 from apps.core.utils import format_error_response
 from apps.parse.api.serializers import CHAPTER_FIELDS, MANGA_FIELDS
 from apps.parse.const import CHAPTER_PARSER, DETAIL_PARSER, IMAGE_PARSER
-from apps.parse.models import  Manga
+from apps.parse.models import Manga
 from apps.parse.scrapy.utils import run_parser
 from apps.parse.utils import fast_annotate_manga_query, needs_update
 
