@@ -10,7 +10,7 @@ authors = [
 license = "GPLv3"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 Django = "3.1"
 psycopg2 = "^2.8.6"
 djangorestframework = "^3.12.2"
@@ -39,6 +39,7 @@ django-elasticsearch-dsl = { git = "https://github.com/dhvcc/django-elasticsearc
 colorlog = "^6.5.0"
 celery = "^5.2.0"
 crochet = "^2.0.0"
+unittest = "^0.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.4"
