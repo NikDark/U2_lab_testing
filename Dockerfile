@@ -7,10 +7,10 @@ COPY pyproject.toml /app
 
 WORKDIR /app
 ENV PYTHONPATH=${PYTHONPATH}:${PWD}
+ENV PYTHONUNBUFFERED=1
+
+EXPOSE 8000
 
 RUN pip3 install poetry 
 RUN poetry config virtualenvs.create false
 RUN poetry install 
-RUN poetry shell
-
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
